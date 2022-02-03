@@ -58,7 +58,7 @@ button.addEventListener("click", () => {
         createP.style.color = "yellow";
         document.getElementById("input").appendChild(createP);  
         
-        document.body.style.backgroundImage = "url('./GJ.gif')";
+        document.body.style.backgroundImage = "url('./GOOD-JOB.png')";
         document.body.style.backgroundSize =  contain; 
 
     } else{
