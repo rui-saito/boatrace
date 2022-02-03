@@ -26,6 +26,7 @@
                 margin-left: 20px;
                 font-size: 50px;
                 text-align: center;
+                margin-bottom: 0px;
                 font-family: 'Sacramento', cursive;
             }
 
@@ -51,7 +52,8 @@
                 font-family: 'Sacramento', cursive;
                 font-weight: bold;
                 font-size: 30px;
-                background-color: mediumspringgreen;
+                background-color:darkred;
+                color: white;
             }
 
             .img{
@@ -64,25 +66,38 @@
             }
 
             .info{
-                text-align:right;
-                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:center;
+
             }
 
             #info-button{
                 width: 150px;
                 height: 50px;
                 font-size: 30px;
-                background-color:lightgreen;
+                background-color:black;
                 color:lightslategray;
             }
-
+            #info-button2{
+                margin-left: 30px;
+                width: 150px;
+                height: 50px;
+                font-size: 30px;
+                background-color:white;
+                color:black;
+            }
 
 
         </style>
 
         </head>
         <body>
-            <h1><u>Dynamite-BoatRace!</u></h1> 
+            <h1><u>Dynamite-BoatRace!</u></h1>
+            <span class="info"><input type="button" id="info-button" value="Code" onclick="window.open( 'https://github.com/rui-saito/boatrace');" >
+            <input type="button" id="info-button2" value="Slide"></span>
+            <hr>
+        <div class="remove">
            <div class="inline-block">
            <h2>1st：</h2>
             <select id="first">
@@ -95,7 +110,7 @@
                 <option value="6">6号艇</option>
             </select>
             </div>
-        
+
            <div class="inline-block">
             <h2>2nd：</h2>
             <select id="second">
@@ -134,8 +149,7 @@
         <div class="boats"><img id="image4" class="img" src="./image001.png"></div><br>
         <div class="boats"><img id="image5" class="img" src="./image001.png"></div><br>
         <div class="boats"><img id="image6" class="img" src="./image001.png"></div><br><br><br><br>
-        <div class="info"><input type="button" id="info-button" value="code-info" onclick="location.href='https://github.com/rui-saito/boatrace'" ></div>
-
+    </div>
 
             <script type="text/javascript" src="script.js"></script>
         </body>
