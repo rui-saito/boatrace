@@ -56,6 +56,10 @@ button.addEventListener("click", () => {
         createP.innerText="的中です！100万舟券ゲット！";
         createP.style.fontSize = "30px";
         createP.style.color = "yellow";
+        getH2One.stylecolor = "yellow";
+        getH2Two.stylecolor = "yellow";
+        getH2Three.stylecolor = "yellow";
+
         document.getElementById("input").appendChild(createP);  
         
         document.body.style.backgroundImage = "url('./GOOD-JOB.png')";
