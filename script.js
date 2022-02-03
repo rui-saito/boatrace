@@ -56,13 +56,16 @@ button.addEventListener("click", () => {
         createP.innerText="的中です！100万舟券ゲット！";
         createP.style.fontSize = "30px";
         createP.style.color = "yellow";
-        getH2One.stylecolor = "yellow";
-        getH2Two.stylecolor = "yellow";
-        getH2Three.stylecolor = "yellow";
+        createP.style.backgroundColor = "hotpink";
+
+        getH1.style.color = "white";
+        getH2One.style.color = "yellow";
+        getH2Two.style.color = "yellow";
+        getH2Three.style.color = "yellow";
 
         document.getElementById("input").appendChild(createP);  
         
-        document.body.style.backgroundImage = "url('./GOOD-JOB.png')";
+        document.body.style.backgroundImage = "url('./ok.png')";
         document.body.style.backgroundSize =  contain; 
 
     } else{
