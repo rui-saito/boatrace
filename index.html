@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <!DOCTYPE html>
+        <html lang="ja">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+            body{
+                background-image: url("./sea.jpg");
+                background-size: cover;
+            }
+
+            .inline-block {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 2%;
+            }
+
+            h1{
+                margin-left: 20px;
+                font-size: 50px;
+                text-align: center;
+                font-family: 'Sacramento', cursive;
+            }
+
+            h2{
+                font-size: 25px;
+            }
+            select{
+                margin-top: 20px;
+                margin-left: 10px;
+                width: 200px;
+                height: 30px;
+                font-size: 20px;
+            }
+
+            #input{
+                text-align: center;
+                margin: 0 auto;
+            }
+
+            #button{
+                width: 250px;
+                height: 50px;
+                font-family: 'Sacramento', cursive;
+                font-weight: bold;
+                font-size: 30px;
+                background-color: mediumspringgreen;
+            }
+
+            .img{
+                width: 150px;;
+            }
+
+            .boats{
+                text-align: center;
+                margin: 0 auto;
+            }
+
+            .info{
+                text-align:right;
+                margin: 0 auto;
+            }
+
+            #info-button{
+                width: 150px;
+                height: 50px;
+                font-size: 30px;
+                background-color:lightgreen;
+                color:lightslategray;
+            }
+
+
+
+        </style>
+
+        </head>
+        <body>
+            <h1><u>Dynamite-BoatRace!</u></h1> 
+           <div class="inline-block">
+           <h2>1st：</h2>
+            <select id="first">
+                <option value="">　　</option>
+                <option value="1">1号艇</option>
+                <option value="2">2号艇</option>
+                <option value="3">3号艇</option>
+                <option value="4">4号艇</option>
+                <option value="5">5号艇</option>
+                <option value="6">6号艇</option>
+            </select>
+            </div>
+        
+           <div class="inline-block">
+            <h2>2nd：</h2>
+            <select id="second">
+                <option value="">　　</option>
+                <option value="1">1号艇</option>
+                <option value="2">2号艇</option>
+                <option value="3">3号艇</option>
+                <option value="4">4号艇</option>
+                <option value="5">5号艇</option>
+                <option value="6">6号艇</option>
+            </select>
+           </div>
+
+            <div class="inline-block">
+            <h2>3rd：</h2>
+            <select id="third">
+                <option value="">　　</option>
+                <option value="1">1号艇</option>
+                <option value="2">2号艇</option>
+                <option value="3">3号艇</option>
+                <option value="4">4号艇</option>
+                <option value="5">5号艇</option>
+                <option value="6">6号艇</option>
+            </select>
+            </div>
+        <br>
+        <div id="input"><input type="button" value="Race-Start" id="button"></div>
+       
+        <br>
+        <br>
+        <br>
+
+        <div class="boats"><img id="image1" class="img" src="./image001.png"></div><br>
+        <div class="boats"><img id="image2" class="img" src="./image001.png"></div><br>
+        <div class="boats"><img id="image3" class="img" src="./image001.png"></div><br>
+        <div class="boats"><img id="image4" class="img" src="./image001.png"></div><br>
+        <div class="boats"><img id="image5" class="img" src="./image001.png"></div><br>
+        <div class="boats"><img id="image6" class="img" src="./image001.png"></div><br><br><br><br>
+        <div class="info"><input type="button" id="info-button" value="code-info" ></div>
+
+
+            <script type="text/javascript" src="script.js"></script>
+        </body>
+        
+ </html>
