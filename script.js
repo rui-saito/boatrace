@@ -6,10 +6,16 @@ const getH1 = document.getElementsByTagName("h1")[0];
 const getH2One = document.getElementsByTagName("h2")[0];
 const getH2Two = document.getElementsByTagName("h2")[1];
 const getH2Three = document.getElementsByTagName("h2")[2];
+const slide = document.getElementById("info-button2");
+const removeElements = document.getElementsByClassName("remove")[0];
 
 const button = document.getElementById("button");
 const getImage = document.getElementById("image1")
 const createP = document.createElement("h2");
+
+const creatediv = document.createElement("div");
+const createSlide = document.createElement("img");
+
 
 const list_imgs = {
     image2:document.getElementById("image2"),
@@ -35,6 +41,29 @@ getH1.addEventListener('click', () => {
     window.alert("高配当を狙おう！ 1着:6号艇 - 2着:3号艇 - 3着:5号艇");
   });
 //------------------------------------------------------------------
+
+//slideボタンを押すとスライド表示
+slide.addEventListener('click', () => {
+    //imgタグが1個以上存在する場合
+    if(document.getElementsByTagName("img").length!==1){
+        //スライドボタン名変更
+        slide.value="Return"
+        //スライドのイメージを生成
+        createSlide.src="./manabi.png"
+        //スライドを入れる部分をすべて消す
+        removeElements.remove();
+        //スライドのイメージを表示
+        document.getElementsByTagName("body")[0].appendChild(createSlide);
+        createSlide.style.width = "100%" ;
+        createSlide.style.margin = "auto" ;
+    } else {
+        //それ以外はリロード
+        location.reload();
+    }
+
+  });
+//------------------------------------------------------------------
+
 
 //レーススタートbutton押すと入力項目に対して、的中、外れ 結果表示
 button.addEventListener("click", () => {
@@ -101,7 +130,7 @@ button.addEventListener("click", () => {
         button.style.backgroundColor="black";
         button.style.color="white";
         button.value = "Window-Reload";
-        
+
         //ゲーム開始時に作成したPタグにstyle情報を付与
         createP.innerText="ちーん。残念です！ ご苦労！";
         createP.style.fontSize = "50px";
