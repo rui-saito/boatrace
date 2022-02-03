@@ -77,7 +77,7 @@ button.addEventListener("click", () => {
         button.style.color="white";
         button.value = "Window-Reload";
 
-        createP.innerText="ちーん。残念です！";
+        createP.innerText="ちーん。残念です！ ご苦労！";
         createP.style.fontSize = "50px";
         createP.style.color = "red";
         createP.style.display = "block";
